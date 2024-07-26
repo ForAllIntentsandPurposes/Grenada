@@ -1,6 +1,6 @@
-baseURL = 'EnterSiteURL.com'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'Enter Site Title Suffix'
+title = 'Grenada.co.uk'
 enableGitInfo = true
 [frontmatter]
 lastmod = ["lastmod", ":git", "date", "publishDate"]
