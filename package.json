@@ -1,0 +1,14 @@
+{
+  "name": "grenada",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "cd site && hugo server -D --noHTTPCache",
+    "prod" : "cd site && hugo --config hugo-prod.toml --gc --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,22 @@
+{{ define "title"}}
+  {{ $.Params.SEO.Title }}
+{{ end }}
+
+{{ define "docType" }}
+<meta name="doctype" content="homepage">
+{{ end }}
+
+{{ define "layoutStyling"}}
+  {{ $stylePage := resources.Get "styles/pages/_homepage.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="preload" href="{{ $stylePage.Permalink }}" as="style" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ $stylePage.Permalink }}" crossorigin="anonymous">
+{{ end }}
+
+{{ define "preloadList" }}
+{{ end }}
+
+
+{{ define "main" }}
+
+    
+{{ end }}

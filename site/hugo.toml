@@ -1,0 +1,6 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Enter Site Title Suffix'
+enableGitInfo = true
+[frontmatter]
+lastmod = ["lastmod", ":git", "date", "publishDate"]

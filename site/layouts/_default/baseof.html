@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{  block "title" . }}{{  .Site.Title }}{{ end }}</title>
+
+    {{ $metaDescriptionFlag := "false" }}
+    {{ with $.Params.SEO.MetaDescription }}
+    <meta name="description" content="{{ . }}"> 
+    {{ $metaDescriptionFlag := "true" }}
+    {{ end }}
+    {{ if ( eq $metaDescriptionFlag "false" ) }}
+    <meta name="description" content="{{ $.Page.Summary }}">
+    {{ end }}
+
+    <link rel="canonical" href="{{ .Permalink }}"/>
+
+    {{ block "preloadList". }}{{ end }}
+
+    {{ block "metaRobots". }}{{ end }}
+
+    {{ block "docType". }}{{ end }}
+
+    {{ block "layoutStyling". }}
+    {{ end }}
+</head>
+<body>
+    <div class="root-container">
+
+      
+      <main class="container">
+        {{ block "main" . }}
+        
+        {{ end }}
+        </main>
+      
+      </div>
+
+
+</body>
+</html>

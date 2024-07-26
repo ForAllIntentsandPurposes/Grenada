@@ -1,0 +1,85 @@
+body {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+$heading-family : "Ubuntu", sans-serif;
+
+h1, .heading-1 {
+    font-family: $heading-family;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    
+    @media (min-width: 600px) {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
+}
+
+h2, .heading-2 {
+    font-family: $heading-family;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+
+    @media (min-width: 600px) {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+}
+
+h3, .heading-3 {
+    font-family: $heading-family;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+
+    @media (min-width: 600px) {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+}
+
+h4, .heading-4 {
+    font-family: $heading-family;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+
+h5, .heading-5 {
+    font-family: $heading-family;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+h6, .heading-6 {
+    font-family: $heading-family;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+.small-header {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.strong {
+    font-weight: 700 !important;
+}
+.strong-600 {
+    font-weight: 600 !important;
+}
+
+.sub-text {
+    font-size: calc(1rem * 0.8);
+    font-weight: 600;
+}
